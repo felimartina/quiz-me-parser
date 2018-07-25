@@ -1,0 +1,35 @@
+{
+  "name": "quiz-me-parser",
+  "version": "1.0.0",
+  "description": "A CLI parser to convert plain text Q&amp;A into JSON.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "quiz-parser": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felimartina/quiz-me-parser.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felimartina/quiz-me-parser/issues"
+  },
+  "homepage": "https://github.com/felimartina/quiz-me-parser#readme",
+  "dependencies": {
+    "commander": "^2.16.0",
+    "ora": "^3.0.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^3.8.0",
+    "eslint-plugin-standard": "^3.1.0"
+  }
+}
