@@ -10,12 +10,18 @@
 			"name": "Launch Program",
 			"program": "${workspaceFolder}/index.js",
 			"args": [
-				"parse",
-				"./sample-question-file.txt",
+				// parse
+				// "parse",
+				// "./sample-question-file.txt",
+				// "-o",
+				// "./sample-question-output.json",
+				// "-t",
+				// "iam"
+				// parse-folder
+				"parse-folder",
+				"/Users/pipe/Desktop/aws-quiz/",
 				"-o",
-				"./sample-question-output.json",
-				"-t",
-				"iam,jayendrapatil.com"
+				"/Users/pipe/Desktop/aws-quiz/"
 			]
 		}
 	]

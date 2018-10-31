@@ -16,12 +16,14 @@ module.exports = (fileName, options) => {
 			throw new Error(`File '${fileName}' does not exist.`)
 		}
 
-		console.log(`Parsing started...`)
+		console.log(`Parsing of file ${fileName} started...`)
 		const globalTags = options.tags ? options.tags.split(',') : []
 		writer.open()
 		const parsedQuestions = parseQuestions(fileName).map(q => {
 			// Ensure that tags are unique and are not repeated
 			q.tags = Array.from(new Set([...q.tags, ...globalTags]))
+			// Mark professional answers
+			q.isProfessional = q.tags.includes('professional')
 			return q
 		})
 
@@ -90,14 +92,19 @@ function parseQuestion(rawQuestion) {
 			question.push(line)
 		}
 	}
+	const fullQuestion = question.join('\n')
+	const isProfessional = tags.includes('professional') || fullQuestion.indexOf('[PROFESSIONAL]') > 0 || fullQuestion.indexOf('[PRO]') > 0
+	if (isProfessional && !tags.includes('professional')) tags.push('professional')
 	return {
-		question: question.join('\n'),
+		id: uuidv4(),
+		question: fullQuestion,
 		options: options,
 		answers: answerIds,
 		type: answerIds.length > 1 ? Constants.QUESTION_TYPES.MULTIPLE_SELECTION : Constants.QUESTION_TYPES.SINGLE_CHOICE,
 		tags: tags,
 		warnings: warnings,
-		isOutdated: isOutdated
+		isOutdated: isOutdated,
+		isProfessional: isProfessional
 	}
 }
 

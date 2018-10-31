@@ -1,3 +1,4 @@
 module.exports = {
-	ParseJson: require(`./json-parser`)	
+	ParseFolder: require('./folder-parser'),
+	ParseJson: require('./json-parser')
 }

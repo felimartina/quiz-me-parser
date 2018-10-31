@@ -1,1078 +1,1105 @@
 [
   {
+    "id": "f55b4ab0-cc58-4344-ae50-ba7ab383d1d9",
     "question": "A company is building software on AWS that requires access to various AWS services. Which configuration should be used to ensure that AWS credentials (i.e., Access Key ID/Secret Access Key combination) are not compromised?",
     "options": [
       {
-        "id": "248737fe-ecf0-40fd-80b8-cc63031064e6",
+        "id": "e9f25ca6-12dc-440a-a929-ceb9b0fe1824",
         "description": "Enable Multi-Factor Authentication for your AWS root account.",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "500d7790-e154-4b12-831c-f832097ec66a",
+        "id": "f0525fd3-75df-4e9c-af6d-a18365397c59",
         "description": "Assign an IAM role to the Amazon EC2 instance.",
         "explanation": "Always use Roles when possible",
         "isCorrectAnswer": true
       },
       {
-        "id": "7ac90085-dfc6-44fc-94e2-07e19cedb9ab",
+        "id": "ef11e48d-a08d-4794-8e62-29375779c5e4",
         "description": "Store the AWS Access Key ID/Secret Access Key combination in software comments.",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "6eff4d80-06dc-40a1-bb74-17e0d81b02cb",
+        "id": "78e2b7d3-92aa-4166-9311-66bc460b61d8",
         "description": "Assign an IAM user to the Amazon EC2 Instance.",
         "explanation": "",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "500d7790-e154-4b12-831c-f832097ec66a"
+      "f0525fd3-75df-4e9c-af6d-a18365397c59"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
       "role",
       "iam",
-      "access-keys",
-      "jayendrapatil.com"
+      "access-keys"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   },
   {
+    "id": "db1cf7b8-86e9-4900-914b-4a42e467884e",
     "question": "A company is preparing to give AWS Management Console access to developers. Company policy mandates identity federation and role-based access control. Roles are currently assigned using groups in the corporate Active Directory. What combination of the following will give developers access to the AWS console?\nSelect TWO",
     "options": [
       {
-        "id": "5c8ea397-62ff-4956-9d3e-fe541c08ae02",
+        "id": "8522786c-0467-4af1-bb57-0f715caecc20",
         "description": "AWS Directory Service AD Connector",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "e1f9b8ee-1678-4dbd-bf4c-9915e9d2411c",
+        "id": "935fba93-9b77-4335-b2c8-5e15a3eb384c",
         "description": "AWS Directory Service Simple AD",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "6b23a232-870f-4044-a79b-4acc2e9924ce",
+        "id": "a7c359d9-3afc-4580-b381-2d3aebeb8ee0",
         "description": "AWS Identity and Access Management groups",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "88fa7d7f-7070-4e03-9f98-b4f2e3cf9555",
+        "id": "971341df-ab64-4acc-96bb-a390ab4b69d1",
         "description": "AWS identity and Access Management roles",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "b9e16a14-dc0e-4ea3-8d9a-4af48d4b688a",
+        "id": "e8126290-a372-4c4e-9a3f-cefe1876226a",
         "description": "AWS identity and Access Management users",
         "explanation": "",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "5c8ea397-62ff-4956-9d3e-fe541c08ae02",
-      "88fa7d7f-7070-4e03-9f98-b4f2e3cf9555"
+      "8522786c-0467-4af1-bb57-0f715caecc20",
+      "971341df-ab64-4acc-96bb-a390ab4b69d1"
     ],
     "type": "MULTIPLE_SELECTION",
     "tags": [
       "ad",
       "federation",
       "role",
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   },
   {
+    "id": "32f8d196-6cb3-4741-9462-b0b24722b235",
     "question": "A customer needs corporate IT governance and cost oversight of all AWS resources consumed by its divisions. The divisions want to maintain administrative control of the discrete AWS resources they consume and keep those resources separate from the resources of other divisions. Which of the following options, when used together will support the autonomy/control of divisions while enabling corporate IT to maintain governance and cost oversight?\nSelect TWO",
     "options": [
       {
-        "id": "4ec89c42-99ae-48a6-ae7d-06a735da2d1e",
+        "id": "10c6ef83-e474-4746-b101-ab74d8f37056",
         "description": "Use AWS Consolidated Billing and disable AWS root account access for the child accounts.",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "4051c983-eb00-42f7-9254-3603685bf649",
+        "id": "ca19017f-7df6-483f-9ca0-ca03009355ad",
         "description": "Enable IAM cross-account access for all corporate IT administrators in each child account.",
         "explanation": "Provides IT governance",
         "isCorrectAnswer": true
       },
       {
-        "id": "49e86b54-c8bc-4766-846b-c65f0c65d226",
+        "id": "2ada469e-4a2d-4e77-b9ad-ee8539542e46",
         "description": "Create separate VPCs for each division within the corporate IT AWS account.",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "5108d705-cd54-4c37-ae43-d8248856d1a6",
+        "id": "8d349ea4-ff04-4d90-93c5-2f5af7f2bbb4",
         "description": "Use AWS Consolidated Billing to link the divisions’ accounts to a parent corporate account.",
         "explanation": "Will provide cost oversight",
         "isCorrectAnswer": true
       },
       {
-        "id": "a46c203e-9262-4817-ad7c-0af009bbf696",
+        "id": "b5c2b2f8-7aa8-435f-97bb-064fa2b7eb9f",
         "description": "Write all child AWS CloudTrail and Amazon CloudWatch logs to each child account’s Amazon S3 ‘Log’ bucket.",
         "explanation": "",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "4051c983-eb00-42f7-9254-3603685bf649",
-      "5108d705-cd54-4c37-ae43-d8248856d1a6"
+      "ca19017f-7df6-483f-9ca0-ca03009355ad",
+      "8d349ea4-ff04-4d90-93c5-2f5af7f2bbb4"
     ],
     "type": "MULTIPLE_SELECTION",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   },
   {
+    "id": "b230018e-e311-4f3d-b930-e142a6bb35ef",
     "question": "Which of the following items are required to allow an application deployed on an EC2 instance to write data to a DynamoDB table? Assume that no security keys are allowed to be stored on the EC2 instance. (Choose 2 answers)",
     "options": [
       {
-        "id": "e09f7bef-735c-4193-9935-4443fda57731",
+        "id": "8527eeaa-888d-4304-9e05-3f08ecddffd6",
         "description": "Create an IAM Role that allows write access to the DynamoDB table",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "5a552a60-c19f-490f-b737-b4c0dbda87c1",
+        "id": "17992994-b759-4975-977a-8b4c5b104124",
         "description": "Add an IAM Role to a running EC2 instance.",
         "explanation": "With latest enhancement from AWS, IAM role can be assigned to a running EC2 instance",
         "isCorrectAnswer": false
       },
       {
-        "id": "ec98f492-3a6f-4025-9ce5-57be0a6253a1",
+        "id": "56f0b903-363c-451a-9b78-cc6294166f8d",
         "description": "Create an IAM User that allows write access to the DynamoDB table.",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "947273a7-e862-4780-8551-96138d576457",
+        "id": "477fe337-55f0-41c0-a38e-659eb5482026",
         "description": "Add an IAM User to a running EC2 instance.",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "23cf7969-82a2-42d2-ade4-5c2208650b9d",
+        "id": "6c912973-6b5e-4f1d-906e-3043f4c77ce9",
         "description": "Launch an EC2 Instance with the IAM Role included in the launch configuration",
         "explanation": "This was the correct answer before, as AWS did not allow IAM role to be added to an existing instance",
         "isCorrectAnswer": true
       }
     ],
     "answers": [
-      "e09f7bef-735c-4193-9935-4443fda57731",
-      "23cf7969-82a2-42d2-ade4-5c2208650b9d"
+      "8527eeaa-888d-4304-9e05-3f08ecddffd6",
+      "6c912973-6b5e-4f1d-906e-3043f4c77ce9"
     ],
     "type": "MULTIPLE_SELECTION",
     "tags": [
       "role",
       "outdated",
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [
       "This question was marked as OUTDATED!!!"
     ],
-    "isOutdated": true
+    "isOutdated": true,
+    "isProfessional": false
   },
   {
+    "id": "258140ab-e672-4fa9-90c2-d3b882e4815a",
     "question": "You are looking to migrate your Development (Dev) and Test environments to AWS. You have decided to use separate AWS accounts to host each environment. You plan to link each accounts bill to a Master AWS account using Consolidated Billing. To make sure you Keep within budget you would like to implement a way for administrators in the Master account to have access to stop, delete and/or terminate resources in both the Dev and Test accounts. Identify which option will allow you to achieve this goal. [PROFESSIONAL]",
     "options": [
       {
-        "id": "82338a95-49d4-4e5d-844e-826e35f5ec52",
+        "id": "f0e26dae-6e88-46e7-bd98-fc3d58ba2a06",
         "description": "Create IAM users in the Master account with full Admin permissions. Create cross-account roles in the Dev and Test accounts that grant the Master account access to the resources in the account by inheriting permissions from the Master account.",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "675b1e8a-9c2e-4d0f-a96a-53101f391888",
+        "id": "5f03bd31-f5fb-4334-94c9-c133fa0fac2e",
         "description": "Create IAM users and a cross-account role in the Master account that grants full Admin permissions to the Dev and Test accounts.",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "7b4dc1a3-4b28-46ee-8ac3-939c2a80b93e",
+        "id": "91e4421c-7240-41c3-98ae-2d56ba344cf6",
         "description": "Create IAM users in the Master account Create cross-account roles in the Dev and Test accounts that have full Admin permissions and grant the Master account access",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "5f2e7869-adf4-4da1-be11-a153d04fb4c7",
+        "id": "f72c15b1-2376-43d7-88fa-f118af0d0942",
         "description": "Link the accounts using Consolidated Billing. This will give IAM users in the Master account access to resources in the Dev and Test accounts",
         "explanation": "",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "7b4dc1a3-4b28-46ee-8ac3-939c2a80b93e"
+      "91e4421c-7240-41c3-98ae-2d56ba344cf6"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": true
   },
   {
+    "id": "704c8a68-a98e-44cf-b8d0-765cb2d7094d",
     "question": "You have an application running on an EC2 Instance which will allow users to download flies from a private S3 bucket using a pre-assigned URL. Before generating the URL the application should verify the existence of the file in S3. How should the application use AWS credentials to access the S3 bucket securely? [PROFESSIONAL]",
     "options": [
       {
-        "id": "60e1e4e4-2d72-4bc2-9106-0b17ab6b5ea7",
+        "id": "a760640b-f088-47b0-8142-c793baf386cc",
         "description": "Use the AWS account access Keys the application retrieves the credentials from the source code of the application.",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "249f8773-4649-4818-96bd-d8c7b99747c6",
+        "id": "af978296-d97e-4bd3-a305-33a260637a7c",
         "description": "Create a IAM user for the application with permissions that allow list access to the S3 bucket launch the instance as the IAM user and retrieve the IAM user’s credentials from the EC2 instance user data.",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "513bc8e3-6b56-4a09-93fc-8e0aa284c4d9",
+        "id": "f10e50b9-9f2c-41ea-962f-f6ef837d98c4",
         "description": "Create an IAM role for EC2 that allows list access to objects in the S3 bucket. Launch the instance with the role, and retrieve the role’s credentials from the EC2 Instance metadata",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "a67a557f-1bbb-4239-8648-0a6862c04731",
+        "id": "8ddf41f0-cf1a-4395-87c3-fd15125e2d52",
         "description": "Create an IAM user for the application with permissions that allow list access to the S3 bucket. The application retrieves the IAM user credentials from a temporary directory with permissions that allow read access only to the application user.",
         "explanation": "",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "513bc8e3-6b56-4a09-93fc-8e0aa284c4d9"
+      "f10e50b9-9f2c-41ea-962f-f6ef837d98c4"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": true
   },
   {
+    "id": "f34be76a-c5a3-44ae-971a-e7a4eda37be7",
     "question": "An administrator is using Amazon CloudFormation to deploy a three tier web application that consists of a web tier and application tier that will utilize Amazon DynamoDB for storage when creating the CloudFormation template which of the following would allow the application instance access to the DynamoDB tables without exposing API credentials?  [PROFESSIONAL]",
     "options": [
       {
-        "id": "69c43bd3-3368-4ba9-a158-75f9fac9d799",
+        "id": "68d783e0-bc00-43cf-9267-221d8487c83b",
         "description": "Create an Identity and Access Management Role that has the required permissions to read and write from the required DynamoDB table and associate the Role to the application instances by referencing an instance profile.",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "aeedddc9-782f-414b-a29c-cecb3e30c6c4",
+        "id": "527a59ad-dc33-42df-a137-35f4bc4378aa",
         "description": "Use the Parameter section in the Cloud Formation template to nave the user input Access and Secret Keys from an already created IAM user that has me permissions required to read and write from the required DynamoDB table.",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "246ffc56-4b79-4978-8f73-8ee2254c92ea",
+        "id": "7bacc324-cd99-4a18-9d45-b8709e16b9da",
         "description": "Create an Identity and Access Management Role that has the required permissions to read and write from the required DynamoDB table and reference the Role in the instance profile property of the application instance.",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "4408d5be-c25a-44ff-b0f1-607ddcfbbea5",
+        "id": "a9e62396-76cc-4c6f-99c5-0c7f7adf46f9",
         "description": "Create an identity and Access Management user in the CloudFormation template that has permissions to read and write from the required DynamoDB table, use the GetAtt function to retrieve the Access and secret keys and pass them to the application instance through user-data.",
         "explanation": "",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "246ffc56-4b79-4978-8f73-8ee2254c92ea"
+      "7bacc324-cd99-4a18-9d45-b8709e16b9da"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": true
   },
   {
+    "id": "b1258bcb-2694-4d56-b572-9534116b4e21",
     "question": "An enterprise wants to use a third-party SaaS application. The SaaS application needs to have access to issue several API commands to discover Amazon EC2 resources running within the enterprise’s account. The enterprise has internal security policies that require any outside access to their environment must conform to the principles of least privilege and there must be controls in place to ensure that the credentials used by the SaaS vendor cannot be used by any other third party. Which of the following would meet all of these conditions? [PROFESSIONAL]",
     "options": [
       {
-        "id": "065c0c80-3b71-450b-b2b0-5d045a839521",
+        "id": "4d10a3d5-e571-49b8-9e06-e79601652e73",
         "description": "From the AWS Management Console, navigate to the Security Credentials page and retrieve the access and secret key for your account.",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "a18d480e-a88a-4fb3-95a4-8760684d1d5c",
+        "id": "24d5776d-cbd4-4780-b4e7-e17f88fd76a4",
         "description": "Create an IAM user within the enterprise account assign a user policy to the IAM user that allows only the actions required by the SaaS application create a new access and secret key for the user and provide these credentials to the SaaS provider.",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "7553b809-9b48-43c9-bc33-1cebecda4d95",
+        "id": "4def934a-5605-440a-832a-af2c9f1874e6",
         "description": "Create an IAM role for cross-account access allows the SaaS provider’s account to assume the role and assign it a policy that allows only the actions required by the SaaS application.",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "96717d3c-c4ce-4978-a1c0-8987584e319f",
+        "id": "a1586178-e199-4fc7-ab26-83d56275726b",
         "description": "Create an IAM role for EC2 instances, assign it a policy mat allows only the actions required tor the SaaS application to work, provide the role ARM to the SaaS provider to use when launching their application instances.",
         "explanation": "",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "7553b809-9b48-43c9-bc33-1cebecda4d95"
+      "4def934a-5605-440a-832a-af2c9f1874e6"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": true
   },
   {
+    "id": "d57c8864-6721-4057-91fa-1f61f913da9a",
     "question": "A user has created an application which will be hosted on EC2. The application makes calls to DynamoDB to fetch certain data. The application is using the DynamoDB SDK to connect with from the EC2 instance. Which of the below mentioned statements is true with respect to the best practice for security in this scenario?",
     "options": [
       {
-        "id": "392c5d37-b0af-42ac-a28c-34f9115900fb",
+        "id": "0fa49107-84f3-4368-9f4f-7c5ea362665b",
         "description": "The user should attach an IAM role with DynamoDB access to the EC2 instance",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "6b35d2d2-af63-4cec-8dc4-f5dd71740de9",
+        "id": "3b9facfb-3211-461a-bf28-cccf9904d86a",
         "description": "The user should create an IAM user with DynamoDB access and use its credentials within the application to connect with DynamoDB",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "bc507f2a-3fc4-40d2-a2e9-5f69d72028da",
+        "id": "9ed53988-59b9-40c7-bec2-4eb2d23ed25a",
         "description": "The user should create an IAM role, which has EC2 access so that it will allow deploying the application",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "737e4e5f-a4ea-4ecf-865b-24066e0e37a4",
+        "id": "f7523200-b55f-4a0a-bdc7-cb023afbaf80",
         "description": "The user should create an IAM user with DynamoDB and EC2 access. Attach the user with the application so that it does not use the root account credentials",
         "explanation": "",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "392c5d37-b0af-42ac-a28c-34f9115900fb"
+      "0fa49107-84f3-4368-9f4f-7c5ea362665b"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   },
   {
+    "id": "4b572429-6796-49eb-8a29-962b12b2e796",
     "question": "A customer is in the process of deploying multiple applications to AWS that are owned and operated by different development teams. Each development team maintains the authorization of its users independently from other teams. The customer’s information security team would like to be able to delegate user authorization to the individual development teams but independently apply restrictions to the users permissions based on factors such as the users device and location. For example, the information security team would like to grant read-only permissions to a user who is defined by the development team as read/write whenever the user is authenticating from outside the corporate network. What steps can the information security team take to implement this capability? [PROFESSIONAL]",
     "options": [
       {
-        "id": "42eb9810-1d36-4d6c-92e5-8e774fc558a2",
+        "id": "ad42471e-4c04-4300-bbb0-1a69447f1588",
         "description": "Operate an authentication service that generates AWS STS tokens with IAM policies from application-defined IAM roles.",
         "explanation": "no user separation, will just help generate temporary tokens",
         "isCorrectAnswer": false
       },
       {
-        "id": "722bb5f3-968e-4bbf-92c7-3a5bbd391015",
+        "id": "feb6c7f5-500c-4362-918e-8dcd18b8f5e0",
         "description": "Add additional IAM policies to the application IAM roles that deny user privileges based on information security policy.",
         "explanation": "Different policy with deny rules based on location, device and more restrictive wins",
         "isCorrectAnswer": true
       },
       {
-        "id": "6fc606b4-f7b9-47af-bbc2-8ccca3bcf6d9",
+        "id": "e203cbaa-d0e2-45c1-9df0-7f03ac48f88c",
         "description": "Configure IAM policies that restrict modification of the application IAM roles only to the information security team.",
         "explanation": "Authorization should still be in developers control",
         "isCorrectAnswer": false
       },
       {
-        "id": "897f0764-aee9-44a1-be5d-89a9749a9040",
+        "id": "0cc9b741-5955-4a79-9b8a-8e02f669ac3a",
         "description": "Enable federation with the internal LDAP directory and grant the application teams permissions to modify users.",
         "explanation": "",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "722bb5f3-968e-4bbf-92c7-3a5bbd391015"
+      "feb6c7f5-500c-4362-918e-8dcd18b8f5e0"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": true
   },
   {
+    "id": "dbb3caab-4d9e-461a-91ae-191a5a0c1561",
     "question": "You are creating an Auto Scaling group whose Instances need to insert a custom metric into CloudWatch. Which method would be the best way to authenticate your CloudWatch PUT request?",
     "options": [
       {
-        "id": "a72e612a-8cf1-4512-9e1a-eb8830bc043d",
+        "id": "31cf927f-7d63-4e59-b216-59b36e0dc079",
         "description": "Create an IAM role with the Put MetricData permission and modify the Auto Scaling launch configuration to launch instances in that role",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "2a48c7bf-a50a-4f26-a3c4-dda6994c654d",
+        "id": "d5e7b75f-c04f-4068-b149-8cc967029705",
         "description": "Create an IAM user with the PutMetricData permission and modify the Auto Scaling launch configuration to inject the users credentials into the instance User Data",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "7ee8b692-5136-4505-aadd-3bd398dd674f",
+        "id": "18efe09c-154d-45cc-ba4b-b16e413a50cc",
         "description": "Modify the appropriate Cloud Watch metric policies to allow the Put MetricData permission to instances from the Auto Scaling group",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "cc06981a-c83c-45a7-9580-2080f45f9aa1",
+        "id": "31324e3d-50a8-4b9c-b215-97d866def151",
         "description": "Create an IAM user with the PutMetricData permission and put the credentials in a private repository and have applications on the server pull the credentials as needed",
         "explanation": "",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "a72e612a-8cf1-4512-9e1a-eb8830bc043d"
+      "31cf927f-7d63-4e59-b216-59b36e0dc079"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   },
   {
+    "id": "cdd18ed7-8961-4552-9bbb-705fe9a7bce9",
     "question": "IAM’s Policy Evaluation Logic always starts with a default ____________ for every request, except for those that use the AWS account’s root security credentials",
     "options": [
       {
-        "id": "48c22e97-bb3c-4246-b825-7328e4ddc6b5",
+        "id": "82aa4f7c-5679-487a-9ecc-279b054a562a",
         "description": "Permit",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "f687d4d3-965d-4b5c-92d5-93f135791630",
+        "id": "96b23e52-e89d-408c-9f31-8da3e70b33b1",
         "description": "Deny",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "5bb175f5-bcb2-4c64-b738-70fb53e96f95",
+        "id": "cb8b5e80-ab5f-418e-81f9-e93d6f0b8ee5",
         "description": "Cancel",
         "explanation": "",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "f687d4d3-965d-4b5c-92d5-93f135791630"
+      "96b23e52-e89d-408c-9f31-8da3e70b33b1"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   },
   {
+    "id": "31f3ec73-ba23-4665-85d9-39c163cca0be",
     "question": "An organization has created 10 IAM users. The organization wants each of the IAM users to have access to a separate DynamoDB table. All the users are added to the same group and the organization wants to setup a group level policy for this. How can the organization achieve this?",
     "options": [
       {
-        "id": "9d879e02-b61f-416b-8e17-eba501bdc700",
+        "id": "eafd53e8-bf18-49a3-908b-86f368860602",
         "description": "Define the group policy and add a condition which allows the access based on the IAM name",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "e0d0023f-1ab6-40aa-b89c-8d4fe18afac2",
+        "id": "21af8b59-588e-48ac-ae18-9688a1764ffa",
         "description": "Create a DynamoDB table with the same name as the IAM user name and define the policy rule which grants access based on the DynamoDB ARN using a variable",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "1699fce3-39e1-4f70-807d-813f66d5cd1e",
+        "id": "9fb59ba2-cccc-490e-8259-600a133d4a90",
         "description": "Create a separate DynamoDB database for each user and configure a policy in the group based on the DB variable",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "ae735cde-fd38-474b-ac47-5bd12874eb11",
+        "id": "f09dd267-dff9-49d3-a52f-2ba1f33b4615",
         "description": "It is not possible to have a group level policy which allows different IAM users to different DynamoDB Tables",
         "explanation": "",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "e0d0023f-1ab6-40aa-b89c-8d4fe18afac2"
+      "21af8b59-588e-48ac-ae18-9688a1764ffa"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   },
   {
+    "id": "01e5cdbe-58ed-4715-97dc-4536d98fea19",
     "question": "An organization has setup multiple IAM users. The organization wants that each IAM user accesses the IAM console only within the organization and not from outside. How can it achieve this?",
     "options": [
       {
-        "id": "cafd792e-0c9d-4254-a047-68edddb98b5f",
+        "id": "ec8243cf-9bd0-4266-a0e5-318ea1ff3738",
         "description": "Create an IAM policy with the security group and use that security group for AWS console login",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "fc475abb-e900-4aa6-8d1e-ad568f57fe16",
+        "id": "b85e7939-0c5b-475c-a025-43334b374546",
         "description": "Create an IAM policy with a condition which denies access when the IP address range is not from the organization",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "9ab629b8-239e-4faa-b01c-d514c094bc30",
+        "id": "469a9962-6e93-438d-b9e1-483cfe0cfa78",
         "description": "Configure the EC2 instance security group which allows traffic only from the organization’s IP range",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "e05f34da-e74d-4681-bd59-5b09d198edee",
+        "id": "3d90b373-3061-4ade-9d0f-aa827f1eae23",
         "description": "Create an IAM policy with VPC and allow a secure gateway between the organization and AWS Console",
         "explanation": "",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "fc475abb-e900-4aa6-8d1e-ad568f57fe16"
+      "b85e7939-0c5b-475c-a025-43334b374546"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   },
   {
+    "id": "68a58490-082d-4c1b-936c-749e131b0aee",
     "question": "Can I attach more than one policy to a particular entity?",
     "options": [
       {
-        "id": "f5b64287-147b-4ce0-a36d-f4c7edfb2273",
+        "id": "7d1e5b81-c9c1-44a7-9cef-46deb213753d",
         "description": "Yes always",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "dc9ffbf5-a01a-4d49-9691-c3320981f91a",
+        "id": "ce402cb4-e8e8-441c-941e-0ce672b08f0c",
         "description": "Only if within GovCloud",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "aaa89b5d-507b-4a1c-873e-61ce07068f8c",
+        "id": "8fd8f0be-c1e5-4f6d-8b63-14ef07bd6c09",
         "description": "No",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "2b9c1f5c-e791-47bd-84e9-813301600d96",
+        "id": "a9af8f2f-da4f-4496-a63c-8f0e99a4b8d2",
         "description": "Only if within VPC",
         "explanation": "",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "f5b64287-147b-4ce0-a36d-f4c7edfb2273"
+      "7d1e5b81-c9c1-44a7-9cef-46deb213753d"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   },
   {
+    "id": "23505b1f-7373-4722-be69-ec2e08ba5218",
     "question": "A __________ is a document that provides a formal statement of one or more permissions.",
     "options": [
       {
-        "id": "e87de767-212c-4fed-a84f-14b764bd246a",
+        "id": "95c2af9b-a99c-4d8f-8fc5-4d75b233a796",
         "description": "policy",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "03fbf485-13ec-4ef8-b002-605c73493f4b",
+        "id": "25bcfc94-def0-408c-bb07-72544565712a",
         "description": "permission",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "281e0849-8994-461a-b997-2b5512066a37",
+        "id": "ea86697a-764e-4970-9986-436ad7d07b3b",
         "description": "Role",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "5932a521-30db-46e2-bb2a-45a5b91b74b8",
+        "id": "1865e8e7-b33e-4f0f-a162-49a510caa693",
         "description": "resource",
         "explanation": "",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "e87de767-212c-4fed-a84f-14b764bd246a"
+      "95c2af9b-a99c-4d8f-8fc5-4d75b233a796"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   },
   {
+    "id": "d2b78e2e-a521-4bdd-9aa9-298bf9d2a5ab",
     "question": "A __________ is the concept of allowing (or disallowing) an entity such as a user, group, or role some type of access to one or more resources.",
     "options": [
       {
-        "id": "250be34e-6baf-41ea-ba2a-d1a31ae2c364",
+        "id": "c9b37c1d-0d07-415d-8099-451d4ceb172e",
         "description": "user",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "faf20f73-a365-4bae-ae19-79ca8f12b117",
+        "id": "6a0fcdbb-329b-4468-b28f-3c2667a4c538",
         "description": "AWS Account",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "495fa6fc-7d81-46aa-9794-5f4097d6088c",
+        "id": "16fe2fbc-96cd-4d4f-be24-2e8a2fcc1da2",
         "description": "resource",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "c0013eda-e94b-4349-b21a-d9658d701cc1",
+        "id": "41b0d529-60d9-4415-bc26-430b8bb695cd",
         "description": "permission",
         "explanation": "",
         "isCorrectAnswer": true
       }
     ],
     "answers": [
-      "c0013eda-e94b-4349-b21a-d9658d701cc1"
+      "41b0d529-60d9-4415-bc26-430b8bb695cd"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   },
   {
+    "id": "19b9776b-963b-4236-bd53-f12f8ad4bef1",
     "question": "True or False: When using IAM to control access to your RDS resources, the key names that can be used are case sensitive. For example, aws:CurrentTime is NOT equivalent to AWS:currenttime.",
     "options": [
       {
-        "id": "badc8847-fa50-4c24-b241-018dca2845ad",
+        "id": "ebbbf61d-db81-4088-a11a-3dbae266a14c",
         "description": "TRUE",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "2edd62e1-6c41-4768-ac2d-b17de1eeeaf2",
+        "id": "5e292e18-17d0-41a6-952a-8131bea08a75",
         "description": "FALSE",
         "explanation": "Refer link",
         "isCorrectAnswer": true
       }
     ],
     "answers": [
-      "2edd62e1-6c41-4768-ac2d-b17de1eeeaf2"
+      "5e292e18-17d0-41a6-952a-8131bea08a75"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   },
   {
+    "id": "41b04b3a-6867-4206-974f-14af4705463e",
     "question": "A user has set an IAM policy where it allows all requests if a request from IP 10.10.10.1/32. Another policy allows all the requests between 5 PM to 7 PM. What will happen when a user is requesting access from IP 10.10.10.1/32 at 6 PM?",
     "options": [
       {
-        "id": "54a2076a-4f74-44ac-a863-7c2aa6daa56c",
+        "id": "0254584c-337b-4553-90cf-73d0177e3f4c",
         "description": "IAM will throw an error for policy conflict",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "972ca29e-867d-4aaa-93aa-645e3a16feb0",
+        "id": "f676e583-da19-45cb-9e42-08dcbdcf52e4",
         "description": "It is not possible to set a policy based on the time or IP",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "a1ad132f-5884-4308-a7b8-bf6b378a111f",
+        "id": "01ff1c92-465f-4ebf-9427-e68fe2890f6b",
         "description": "It will deny access",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "337997a7-83d2-4767-beeb-3173191e2762",
+        "id": "5303d6e2-039b-4723-a2ee-3352b5f96224",
         "description": "It will allow access",
         "explanation": "",
         "isCorrectAnswer": true
       }
     ],
     "answers": [
-      "337997a7-83d2-4767-beeb-3173191e2762"
+      "5303d6e2-039b-4723-a2ee-3352b5f96224"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   },
   {
+    "id": "799e2d9b-1636-4143-bdf0-69377ddf4a07",
     "question": "Which of the following are correct statements with policy evaluation logic in AWS Identity and Access Management? Choose 2 answers.",
     "options": [
       {
-        "id": "5fb14ec6-4eb9-4883-baae-af7af4800e4b",
+        "id": "8e44fde1-48c8-4a07-ba1d-092aced03f30",
         "description": "By default, all requests are denied",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "9cd71ff3-c223-4e4e-b759-657e95873384",
+        "id": "da53fed4-cd40-456a-beaf-3dd959960854",
         "description": "An explicit allow overrides an explicit deny",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "e1c63e61-e2d8-4be1-b362-72e67b91dc1a",
+        "id": "02ceadff-b5b9-4561-a6bb-120869957860",
         "description": "An explicit allow overrides default deny",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "7e71948d-6b17-411f-b814-d27b1db36685",
+        "id": "5a12f8f5-d7fc-4795-ab84-5a8444dafbb3",
         "description": "An explicit deny does not override an explicit allow",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "47cee3dd-4338-4810-a1cf-719c8c1eda6a",
+        "id": "c03c0064-0611-4496-9a2a-502dae3555d5",
         "description": "By default, all request are allowed",
         "explanation": "",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "5fb14ec6-4eb9-4883-baae-af7af4800e4b",
-      "e1c63e61-e2d8-4be1-b362-72e67b91dc1a"
+      "8e44fde1-48c8-4a07-ba1d-092aced03f30",
+      "02ceadff-b5b9-4561-a6bb-120869957860"
     ],
     "type": "MULTIPLE_SELECTION",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   },
   {
+    "id": "3d0b4219-807d-424c-8702-8b7a4849cb89",
     "question": "A web design company currently runs several FTP servers that their 250 customers use to upload and download large graphic files. They wish to move this system to AWS to make it more scalable, but they wish to maintain customer privacy and keep costs to a minimum. What AWS architecture would you recommend? [PROFESSIONAL]",
     "options": [
       {
-        "id": "4997a593-9aa1-4568-81d2-dba3af04c3fd",
+        "id": "f5a346eb-ee54-4d9c-8c12-d6999fec05d6",
         "description": "Ask their customers to use an S3 client instead of an FTP client. Create a single S3 bucket. Create an IAM user for each customer. Put the IAM Users in a Group that has an IAM policy that permits access to subdirectories within the bucket via use of the ‘username’ Policy variable.",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "003a034d-d033-46d5-8d8d-4822183bb80f",
+        "id": "85416d36-17c1-42fb-a216-ea860d230511",
         "description": "Create a single S3 bucket with Reduced Redundancy Storage turned on and ask their customers to use an S3 client instead of an FTP client. Create a bucket for each customer with a Bucket Policy that permits access only to that one customer.",
         "explanation": "Creating bucket for each user is not a scalable model, also 100 buckets are a limit earlier without extending which has since changed link",
         "isCorrectAnswer": false
       },
       {
-        "id": "0d0dfeec-181a-4716-829e-c6d2d53333db",
+        "id": "cda80e06-ff7e-4c7e-9303-cb306c323d26",
         "description": "Create an auto-scaling group of FTP servers with a scaling policy to automatically scale-in when minimum network traffic on the auto-scaling group is below a given threshold. Load a central list of ftp users from S3 as part of the user Data startup script on each Instance",
         "explanation": "Expensive",
         "isCorrectAnswer": false
       },
       {
-        "id": "423de4cc-4adf-4295-aa79-8f9a221555c8",
+        "id": "f21ac915-d3d9-4d5b-ab85-442691def5be",
         "description": "Create a single S3 bucket with Requester Pays turned on and ask their customers to use an S3 client instead of an FTP client. Create a bucket tor each customer with a Bucket Policy that permits access only to that one customer.",
         "explanation": "Creating bucket for each user is not a scalable model, also 100 buckets are a limit earlier without extending which has since changed link",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "4997a593-9aa1-4568-81d2-dba3af04c3fd"
+      "f5a346eb-ee54-4d9c-8c12-d6999fec05d6"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": true
   },
   {
+    "id": "5591b8c5-06ba-4df8-897d-5da7b266da22",
     "question": "What are the two permission types used by AWS?",
     "options": [
       {
-        "id": "fdecafec-cc42-46df-8e03-14e0cbad2d4d",
+        "id": "c9cd1249-3377-462c-8c53-59ae19484631",
         "description": "Resource-based and Product-based",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "e76036de-d0fb-4480-b8ae-8cbe62c29d13",
+        "id": "2f33c97b-4151-4762-8b29-fb6d34143a95",
         "description": "Product-based and Service-based",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "293f9cfa-aca7-4095-8bd2-fe716dbf7a3a",
+        "id": "da30cf55-fa5b-4606-8806-2b85b4562241",
         "description": "Service-based",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "795a0c7c-561b-4cab-8a5d-4cca4a185d88",
+        "id": "c0550e16-6c47-4ec0-8038-02a6d390a379",
         "description": "User-based and Resource-based",
         "explanation": "",
         "isCorrectAnswer": true
       }
     ],
     "answers": [
-      "795a0c7c-561b-4cab-8a5d-4cca4a185d88"
+      "c0550e16-6c47-4ec0-8038-02a6d390a379"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   },
   {
+    "id": "55f4082a-0e9f-4e77-a7f1-fb93197e9128",
     "question": "What’s the policy used for cross account access? (Choose 2)",
     "options": [
       {
-        "id": "286989ed-a1f2-49d8-956c-9513ee34168d",
+        "id": "ab7a6691-e816-4d7c-aaf9-55ca0c9291fb",
         "description": "Trust policy",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "4f4d0d04-5882-49b2-bb15-a1383b63383b",
+        "id": "2a33ffc0-38c5-48a1-a995-df7461be3e82",
         "description": "Permissions Policy",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "a577b3b7-9b98-4163-a166-25bbbb031b60",
+        "id": "a7f7c71e-1aff-4eba-97b2-820082f0745c",
         "description": "Key policy",
         "explanation": "",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "286989ed-a1f2-49d8-956c-9513ee34168d",
-      "4f4d0d04-5882-49b2-bb15-a1383b63383b"
+      "ab7a6691-e816-4d7c-aaf9-55ca0c9291fb",
+      "2a33ffc0-38c5-48a1-a995-df7461be3e82"
     ],
     "type": "MULTIPLE_SELECTION",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   },
   {
+    "id": "ef246d93-7f2e-4974-9f9e-847e82467d5f",
     "question": "Your organization is preparing for a security assessment of your use of AWS. In preparation for this assessment, which two IAM best practices should you consider implementing? Choose 2 answers",
     "options": [
       {
-        "id": "ea4ce32d-bee2-405b-8c10-cb766a6f6030",
+        "id": "130808b2-1255-411c-a311-c7d0977977cb",
         "description": "Create individual IAM users for everyone in your organization",
         "explanation": "May not be needed as can use Roles as well",
         "isCorrectAnswer": false
       },
       {
-        "id": "0de013ef-ae21-4140-919a-d0fe42287b2b",
+        "id": "cc66b048-4921-485f-a249-5b312e84969e",
         "description": "Configure MFA on the root account and for privileged IAM users",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "d334f1fc-4e54-49a2-99ce-e00b974f2e2c",
+        "id": "0f1f8fe3-0f2e-4d07-b336-2f373be5984d",
         "description": "Assign IAM users and groups configured with policies granting least privilege access",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "b047752d-ae2c-4385-a0bf-eb6b015dc84e",
+        "id": "89d4841e-470f-4535-aa97-98955cd98f65",
         "description": "Ensure all users have been assigned and are frequently rotating a password, access ID/secret key, and X.509 certificate",
         "explanation": "Must be assigned only if using console or through command line",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "0de013ef-ae21-4140-919a-d0fe42287b2b",
-      "d334f1fc-4e54-49a2-99ce-e00b974f2e2c"
+      "cc66b048-4921-485f-a249-5b312e84969e",
+      "0f1f8fe3-0f2e-4d07-b336-2f373be5984d"
     ],
     "type": "MULTIPLE_SELECTION",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   },
   {
+    "id": "9d15dde8-219c-457c-8d8d-5253c935f1ff",
     "question": "What are the recommended best practices for IAM? (Choose 3 answers)",
     "options": [
       {
-        "id": "24373664-160a-4e6f-a1df-c99c924646cb",
+        "id": "3834f49e-85a1-4e9e-874c-d4ede40e4c87",
         "description": "Grant least privilege",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "3a3e900c-04c7-4ea3-ba51-7cbb1d46aec7",
+        "id": "7ebc3d69-4adc-43f5-a120-4687091aa58c",
         "description": "User the AWS account",
         "explanation": "root) for regular use",
         "isCorrectAnswer": false
       },
       {
-        "id": "2670a621-3298-4f67-bf73-c840df634ae3",
+        "id": "b11791db-9fa8-4e0e-b03f-e75fd4f7f016",
         "description": "Use Mutli-Factor Authentication MFA",
         "explanation": "",
         "isCorrectAnswer": true
       },
       {
-        "id": "928a5e4e-24e8-4983-a55d-3468bae03a76",
+        "id": "e66c72d0-acc9-40d0-954e-e41dfd2d6df7",
         "description": "Store access key/private key in git",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "621c64ad-9e5d-4bc6-abdd-ef207cac65f6",
+        "id": "7064226a-eceb-48b5-accb-560ffa7f0b0f",
         "description": "Rotate credentials regularly",
         "explanation": "",
         "isCorrectAnswer": true
       }
     ],
     "answers": [
-      "24373664-160a-4e6f-a1df-c99c924646cb",
-      "2670a621-3298-4f67-bf73-c840df634ae3",
-      "621c64ad-9e5d-4bc6-abdd-ef207cac65f6"
+      "3834f49e-85a1-4e9e-874c-d4ede40e4c87",
+      "b11791db-9fa8-4e0e-b03f-e75fd4f7f016",
+      "7064226a-eceb-48b5-accb-560ffa7f0b0f"
     ],
     "type": "MULTIPLE_SELECTION",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   },
   {
+    "id": "42c3c406-524e-4c7b-b3e5-d5ba392010c4",
     "question": "Which of the below mentioned options is NOT a best practice to securely manage the AWS access credentials?",
     "options": [
       {
-        "id": "e1f6b245-3a81-4540-82d5-c03cb19f3500",
+        "id": "d7512781-6350-42ed-8b25-d4b1025549b5",
         "description": "Enable MFA for privileged users",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "d315dc28-6f91-45e2-ab8a-5dc43860d079",
+        "id": "441af900-4a40-4a54-b9e8-5693699b40f2",
         "description": "Create individual IAM users",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "a9689943-6259-4a46-942b-65d80b1a1e44",
+        "id": "16213de5-eaae-4564-9af5-fbce4d5c63d7",
         "description": "Keep rotating your secure access credentials at regular intervals",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "b9b27e76-f2e7-4f92-83ed-188fce663375",
+        "id": "24386f11-43cd-4251-9c78-c9ffde50b58c",
         "description": "Create strong access key and secret access key and attach to the root account",
         "explanation": "",
         "isCorrectAnswer": true
       }
     ],
     "answers": [
-      "b9b27e76-f2e7-4f92-83ed-188fce663375"
+      "24386f11-43cd-4251-9c78-c9ffde50b58c"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   },
   {
+    "id": "4ec5c1ec-4c93-4b89-a6f5-54a9ed2ae333",
     "question": "Your CTO is very worried about the security of your AWS account. How best can you prevent hackers from completely hijacking your account?",
     "options": [
       {
-        "id": "3bf0b143-1f70-400d-8926-219a4899bd23",
+        "id": "7338ba0c-b43f-42b9-8da0-6b470f2211b7",
         "description": "Use short but complex password on the root account and any administrators.",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "ab7e044c-602b-4210-a12f-8fe1a6549ea6",
+        "id": "78827780-cbc7-4abf-a746-52e78f2317eb",
         "description": "8Use AWS IAM Geo-Lock and disallow anyone from logging in except for in your city.",
         "explanation": "",
         "isCorrectAnswer": false
       },
       {
-        "id": "77f73974-fb4a-4011-8b66-585d16dc155e",
+        "id": "2267343b-1c92-42fe-8a8d-7b827ae6d196",
         "description": "Use MFA on all users and accounts, especially on the root account.",
         "explanation": "For increased security, it is recommend to configure MFA to help protect AWS resources",
         "isCorrectAnswer": true
       },
       {
-        "id": "8fe4717e-442c-49ae-b8d5-a10bdf1e87b2",
+        "id": "69bcef2e-f909-4647-8338-c4c6ea83fa67",
         "description": "Don’t write down or remember the root account password after creating the AWS account.",
         "explanation": "",
         "isCorrectAnswer": false
       }
     ],
     "answers": [
-      "77f73974-fb4a-4011-8b66-585d16dc155e"
+      "2267343b-1c92-42fe-8a8d-7b827ae6d196"
     ],
     "type": "SINGLE_CHOICE",
     "tags": [
-      "iam",
-      "jayendrapatil.com"
+      "iam"
     ],
     "warnings": [],
-    "isOutdated": false
+    "isOutdated": false,
+    "isProfessional": false
   }
 ]
